@@ -6,27 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@next"></script>
 
-    <title>Document</title>
+    <title>Squelette</title>
 </head>
 <body>
 
 <div id="app" >
-  {{calcul}}
+ 
 </div>
 
 <script>
   app = Vue.createApp({
-    data(){
-      return{
-        d:15
-      }
-    },
-    computed: {
-      calcul(){
-        return this.d
-      }
-    }
-     
   });
   app.mount('#app')
 </script>

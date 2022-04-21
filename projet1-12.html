@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <title>projet 1-12</title>
+</head>
+<body>
+
+<div id="app" >
+  
+  <p>Veuillez choisir parmis les langages suivants</p>
+  <select v-model="selection">
+  
+    <option value="Java">Java</option>
+    <option value="Javascript">Javascript</option>
+    <option value="Php">Php</option>
+    <option value="Python">Python</option>
+    <option value="C#">C#</option>
+  
+</select>
+<p>vous avez choisit {{selection}}</p> <br/>
+
+</div>
+
+<script>
+  app = Vue.createApp({
+    data(){
+    return{
+      selection:''
+    }
+  }
+  });
+  app.mount('#app')
+  
+</script>
+  
+</body>
+</html>
