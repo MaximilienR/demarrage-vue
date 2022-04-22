@@ -12,19 +12,19 @@
     <div id="app">
       <h1>Quel est ton langage préféré ? </h1>
       
-<input type="radio" v-model="cases" value="Javascipt">
+<input type="radio" v-model="choice" value="Javascipt">
 <label>Javascipt</label>
-<input type="radio" v-model="cases" value="java">
+<input type="radio" v-model="choice" value="java">
 <label>Java</label>
-<input type="radio" v-model="cases" value="Php">
+<input type="radio" v-model="choice" value="Php">
 <label>Php</label>
-<p>vous avez choisis: {{cases}}</p>
+<p>vous avez choisis: {{choice}}</p>
     </div>
     <script>
         const app = Vue.createApp({
             data() {
                 return {
-                    cases:[]
+                    choice:[]
                 }
                 }
             });
