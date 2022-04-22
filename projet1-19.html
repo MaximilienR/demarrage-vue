@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <title>Squelette</title>
+</head>
+<body>
+
+<div id="app" >
+  <label>entrez votre prénom</label>
+  <input type="text" v-model="prenom">
+  <button v-on:click="hello">Cliquez ici</button>
+</div>
+
+<script>
+ 
+  app = Vue.createApp({
+    data(){
+    return {
+      prenom:''
+    }
+  },
+  methods:{
+    hello(){
+      alert('bonjour'+' ' +this.prenom);
+    }
+  }
+  });
+  app.mount('#app')
+</script>
+  
+</body>
+</html>
